@@ -1,0 +1,9 @@
+{
+    "root": {
+        "path": "value"
+    } ,
+    "field_map": {
+        "id": "id",
+        "city": "address/city"
+    }
+}

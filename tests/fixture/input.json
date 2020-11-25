@@ -1,0 +1,24 @@
+{
+    "value": [
+        {
+            "id": 1,
+            "address": {
+                "city": "Sofia",
+                "country": "Bulgaria"
+            }
+        },
+        {
+            "id": 2,
+            "address": {
+                "city": "New York",
+                "country": "USA"
+            }
+        },
+        {
+            "id": 3,
+            "address": {
+                "country": "USA"
+            }
+        }
+    ]
+}

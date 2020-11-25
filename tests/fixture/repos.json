@@ -1,0 +1,39 @@
+[
+    {
+    "additional_properties": {},
+    "folder": "\\arfw",
+    "id": 9617,
+    "name": "pre-requisites-pipeline.yml",
+    "revision": 5,
+    "_links": {
+        "additional_properties": {
+            "web": {
+                "href": "https://dev.azure.com/cbsp-abnamro/94c99d7b-eb04-4700-a827-176f561cce22/_build/definition?definitionId=9617"
+            },
+            "self": {
+                "href": "https://dev.azure.com/cbsp-abnamro/94c99d7b-eb04-4700-a827-176f561cce22/_apis/pipelines/9617?revision=5"
+            }
+        },
+        "links": null
+    },
+    "configuration": {
+        "additional_properties": {
+            "path": "/pre-requisites-pipeline.yml",
+            "variables": {
+                "keyVaultName": {
+                    "value": "airflow-d-01-kv"
+                },
+                "resourceGroupName": {
+                    "value": "airflow-d-rg"
+                }
+            },
+            "repository": {
+                "id": "7d57c63c-c411-4ce3-864e-a3d50c5fdb1f",
+                "type": "azureReposGit"
+            }
+        },
+        "type": "yaml"
+    },
+    "url": "https://dev.azure.com/cbsp-abnamro/94c99d7b-eb04-4700-a827-176f561cce22/_apis/pipelines/9617?revision=5"
+}
+]

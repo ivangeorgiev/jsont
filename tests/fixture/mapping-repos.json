@@ -1,0 +1,13 @@
+{
+    "root": {
+        "path": ""
+    } ,
+    "field_map": {
+        "name": "name",
+        "id": "id",
+        "folder": "folder",
+        "revision": "revision",
+        "type": "configuration/type",
+        "repository_id": "configuration/additional_properties/repository/id"
+    }
+}
