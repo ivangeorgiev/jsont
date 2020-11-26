@@ -25,14 +25,18 @@ if True: # pragma: no cover
 
 
     @cli_convert_json_to.command(name='csv', help='Convert JSON file to CSV')
-    @click.option('--input-file', '-i', required=True, help='Path to the input file')
-    @click.option('--output-file', '-o', help='Path to the output file')
+    @click.option('--input-file', '-i', help='Path to the input file. If not specified, standard input is used')
+    @click.option('--output-file', '-o', help='Path to the output file. If not specified, standard output is used')
     @click.option('--mapping-file', '-m', required=True, help='Path to the mapping file')
     def cli_convert_json_to_csv(input_file, output_file, mapping_file):
         with open(mapping_file, 'r') as mf:
             mapping_def = json.load(mf)
-        with open(input_file, 'r') as infile:
-            input_data = json.load(infile)
+        if input_file:
+            with open(input_file, 'r') as infile:
+                input_data = json.load(infile)
+        else:
+            input_data = json.load(sys.stdin)
+
         mapping = create_path_map(mapping_def['field_map'], default='')
         root_path = get_deep_attr(mapping_def, 'root/path', default='')
         mapped = map_rows(input_data, map=mapping, root=root_path)
